@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        HTML Forms
+    </title>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <ul>
+        <li>Forms are a big part of how the web works</li>
+        <li>Most of user input on the web is taken via forms</li>
+        <li>This input is normally sent to a server and stored in a database for further use</li>
+    </ul>
+
+    <h2>Example</h2>
+
+    <form action="/action_page.php">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h3>Radio Buttons</h3>
+
+      <form>
+        <input type="radio" id="batman" name="superheroes" value="batman">
+        <label for="male">Batman</label><br>
+        <input type="radio" id="superman" name="superheroes" value="superman">
+        <label for="female">Superman</label><br>
+        <input type="radio" id="wonderwoman" name="superheroes" value="wonderwoman">
+        <label for="other">Wonder Woman</label>
+      </form>
+
+      <h3>Checkboxes</h3>
+      <form>
+        <input type="checkbox" id="batman" name="batman" value="batman">
+        <label for="vehicle1"> Batman</label><br>
+        <input type="checkbox" id="batman" name="batman" value="batman">
+        <label for="vehicle2"> Superman</label><br>
+        <input disabled type="checkbox" id="batman" name="batman" value="batman">
+        <label for="vehicle3"> Wonder Woman</label>
+      </form>
+
+      <h3>Dropdown</h3>
+
+      <label for="cars">Choose a superhero:</label>
+<select id="superheroes" name="superheroes">
+  <option value="batman">Batman</option>
+  <option value="superman">Superman</option>
+  <option value="wonderwoman">Wonder Woman</option>
+</select>
+
+<h3>Text Area</h3>
+
+<textarea name="message" rows="10" cols="30">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium repellendus reiciendis in ea mollitia quidem facilis, adipisci commodi consequuntur inventore neque itaque doloremque! Officiis vero perferendis sapiente! Nam eos quaerat similique quas accusamus, magni cupiditate molestiae perspiciatis doloribus earum sed, assumenda vitae aut et voluptatem saepe quam! Id accusamus, tenetur at consequatur dolorum odit! Eius non perspiciatis eveniet unde quam ratione facere, doloremque autem exercitationem quod est. Commodi similique fugiat odit quae distinctio est quisquam nihil earum totam. Iure maiores eaque repellat accusamus voluptatum, rerum veniam repudiandae in nam provident ducimus odit, facere eligendi, eius quis architecto suscipit quam aliquam?
+    </textarea>
+
+
+ <h3>Buttons</h3>
+ 
+ <button type="button" onclick="alert('Hey')">Click Me!</button>
+
+ <h3>Data List</h3>
+
+ <form action="/action_page.php">
+    <input list="superheroes2">
+    <datalist id="superheroes2">
+      <option value="Captain America">
+      <option value="Iron Man">
+      <option value="Spiderman">
+      <option value="Hulk">
+      <option value="Black Widow">
+    </datalist>
+  </form>
+
+  <br><br>
+
+  <input type="date" name="dates" id="dates">
+  <br><br>
+
+
+  <form action="/action_page.php">
+  <label for="emails">Enter your email:</label>
+  <input type="email" name="emails" id="emails">
+  <input type="submit" value="Submit">
+</form>
+
+<br><br>
+
+<a href="multimedia.html">Go to Next Page</a>
+
+</body>
+
+</html>
